@@ -49,4 +49,6 @@ tasks.getByName("jar") {
 tasks.test {
     ignoreFailures = true
     useJUnitPlatform()
+    jvmArgs("-Xshare:off") // JVM 아규먼트 설정
+
 }

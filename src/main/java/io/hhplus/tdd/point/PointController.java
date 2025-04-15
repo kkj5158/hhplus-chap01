@@ -13,13 +13,16 @@ import java.util.List;
 @RequestMapping("/point")
 @RequiredArgsConstructor
 public class PointController {
-
     private static final Logger log = LoggerFactory.getLogger(PointController.class);
 
     private final PointService pointService;
 
+    /*
+    ToDo - Validation 처리 하시오.
+     */
     /**
      * TODO - 특정 유저의 포인트를 조회하는 기능을 작성해주세요.
+     *
      */
     @GetMapping("{id}")
     public UserPoint point(
